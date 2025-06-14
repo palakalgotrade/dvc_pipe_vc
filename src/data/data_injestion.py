@@ -50,7 +50,7 @@ def process(df):
 
 def save_data(data_path : str,train_data : pd.DataFrame,test_data : pd.DataFrame) -> None:
     
-    os.makedirs(data_path)    
+    os.makedirs(data_path, exist_ok=True)    
     train_data.to_csv(os.path.join(data_path,'train.csv'))
     test_data.to_csv(os.path.join(data_path,'test.csv'))
 

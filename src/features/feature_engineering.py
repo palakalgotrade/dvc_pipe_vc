@@ -39,7 +39,7 @@ test_df = pd.DataFrame(X_test_bow.toarray())
 test_df['label'] = y_test
 
 data_path = os.path.join('data','features')
-os.makedirs(data_path)
+os.makedirs(data_path, exist_ok=True)
 
 train_df.to_csv(os.path.join(data_path,'train_bow.csv'))
 test_df.to_csv(os.path.join(data_path,'test_bow.csv'))

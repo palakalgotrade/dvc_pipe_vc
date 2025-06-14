@@ -1,0 +1,4 @@
+[core]
+    remote = dvc_project_repo
+['remote "dvc_project_repo"']
+    url = C:\Users\rkcas\AppData\Local\Temp\dvc_pipe_vc
